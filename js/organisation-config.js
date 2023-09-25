@@ -1,6 +1,7 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
 var organisationConfig = {
     nl_organisationName: "VNG Realisatie",
+    // Onderstaande 2 variabelen moeten waarschijnlijk nog aangepast worden.
     nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
     // Het hier gedefinieerde logo wordt helemaal bovenaan het Respec document aan de rechterzijde geplaatst.
