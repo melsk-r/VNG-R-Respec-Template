@@ -1,7 +1,7 @@
 let respecConfig = {
   useLogo: true,
   useLabel: true,
-  license: "cc-by",
+  license: "eupl",
   specStatus: "DEF",
   specType: "HR",
   pubDomain: "dk",
