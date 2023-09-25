@@ -24,13 +24,15 @@ var organisationConfig = {
 
     localizationStrings: {
         en: {
+            // Documentstatussen	
             wv: "Draft",
             cv: "Recommendation",
             vv: "Proposed recommendation",
             def: "Definitive version",
-            basis: "Document",
             eo: "Outdated version",
             tg: "Rescinded version",
+	    // Document types
+            basis: "Document",
             no: "Norm",
             st: "Standard",
             im: "Information model",
@@ -42,6 +44,7 @@ var organisationConfig = {
             bp: "Best practice",
         },
         nl: {
+            // Documentstatussen	
             wv: "Werkversie",
             cv: "Consultatieversie",
             vv: "Versie ter vaststelling",
@@ -49,6 +52,8 @@ var organisationConfig = {
             basis: "Document",
             eo: "Verouderde versie",
             tg: "Teruggetrokken versie",
+            tst: "Test versie",
+	    // Document types
             no: "Norm",
             st: "Standaard",
             im: "Informatiemodel",
