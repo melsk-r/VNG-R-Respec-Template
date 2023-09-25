@@ -3,6 +3,8 @@ var organisationConfig = {
     nl_organisationName: "VNG Realisatie",
     nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
+    // Het hier gedefinieerde logo wordt helemaal bovenaan het Respec document aan de rechterzijde geplaatst.
+    // Hier is er voor gekozen de 'width' property niet te gebruiken waardoor het logo automatisch in de juiste verhoudingen wordt geplaatst.
     logos: [{
         src: "https://melsk-r.github.io/VNG-R-Respec-Template/logo-VNG-Realisatie.jpg",
         alt: "VNG-Realisatie",
@@ -11,15 +13,31 @@ var organisationConfig = {
         url: "https://www.vng.nl",
     }],
 
+   // Mermaid is een eenvoudige notatie-wijze voor het definieren van stroomdiagrammen. Onderstaande 'postProcess' maakt van die eenvoudige notatie een grafiek.
     postProcess: [window.respecMermaid.createFigures],
 
-    latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
-    thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
-    prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
+   // De hier gedefinieerde variabelen kunnen door ze nogmaals in de config.js te plaatsen overruled worden.  
+   // Bijv. om de url van de vorige versie niet te tonen, aan begin van de life cycle van een document is deze er nl. nog helemaal niet.
+	
+   //this: "this", <-- Zo kun je dus eigen variabelen introduceren die je ergens anders kunt gebruiken.
+   // Zoals bijv. hier --> 'thisVersion: ["nl_organisationPublishURL", "this", "/", "shortName"],'
+   
+   // Onderzoeken hoe je een oude versie kunt publiceren.
+   // ---------------------------------------------------
+   // latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
+    latestVersion: ["nl_organisationPublishURL", "latest", "/", "shortName"],
+   // thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
+    thisVersion: ["nl_organisationPublishURL", "shortName"],
+   // prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
+    prevVersion: ["nl_organisationPublishURL", "shortName"],
+
+   // Nog onderzoeken waarom, als de repository naam hoofdletters bevat' de url van de 'vorige versie' na renderen alleen lowercase is terijl die 
+   // van de huidige en laatste versie voldoet aan de naam zoals deze is. Dat zorgt er nl. voor dat die url niet werkt.
+
     useLogo: true,
     useLabel: true,
 
-    license: "cc0",
+    license: "eupl",
     addSectionLinks: true,
 
     localizationStrings: {
@@ -110,6 +128,12 @@ var organisationConfig = {
             short: "CC-BY-ND",
             url: "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
             image: "https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-by-nd.svg",
+        },
+        "eupl": {
+            name: "EUROPEAN UNION PUBLIC LICENCE v. 1.2",
+            short: "EUPL",
+            url: "https://eupl.eu/",
+            image: "https://eupl.eu/eu.png",
         },
     },
 
