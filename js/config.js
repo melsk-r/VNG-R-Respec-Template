@@ -1,10 +1,12 @@
 let respecConfig = {
-  useLogo: true,
-  useLabel: true,
-  license: "eupl",
-  specStatus: "DEF",
-  specType: "HR",
-  pubDomain: "dk",
+//  useLogo: true,
+//  useLabel: true,
+//  license: "eupl",
+  // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
+  specStatus: "WV",
+  // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
+  specType: "IM",
+  //pubDomain: "dk",
   shortName: "template",
   publishDate: "2023-06-21",
   publishVersion: "0.0.3",
