@@ -4,7 +4,7 @@ var organisationConfig = {
     nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
     logos: [{
-        src: "https://melsk-r.github.io/Respec/logo-VNG-Realisatie.jpg",
+        src: "https://melsk-r.github.io/VNG-R-Respec-Template/logo-VNG-Realisatie.jpg",
         alt: "VNG-Realisatie",
         id: "VNG-Realisatie",
         height: 77,
