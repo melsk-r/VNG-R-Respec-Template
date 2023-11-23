@@ -4,7 +4,7 @@ ReSpec is een tool om html en pdf documenten te genereren op basis van markdown 
 
 Gebruik de knop [_Use this template_](https://github.com/melsk-r/VNG-R-Respec-Template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
 
-De dynamische pagina is van het template document [hier](https://melsk-r.github.io/VNG-R-Respec-Template/) te zien.
+De dynamische pagina van het template document is [hier](https://melsk-r.github.io/VNG-R-Respec-Template/) te zien.
 
 Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
 automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.
