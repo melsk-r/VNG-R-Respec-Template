@@ -23,20 +23,18 @@ Aanpassingen maken aan het document gaat op 2 manieren:
 - De configuratie van het document aanpassing in de config files
 - Markdown of html files toevoegen/veranderen
 
-De **configuratie files** bevat informatie over de organisatie en over 
+De **configuratie files** bevatten informatie over de organisatie en over 
 de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
-voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files:
+voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files die weer in 2 verschillende repositories zijn ondergebracht:
 [organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
-Deze files zijn te vinden in de `js` folder.
 
 De organisation_config bevat informatie over de organisatie, de informatie in deze file 
-zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
-zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
-niet elke keer gekopieerd hoeft te worden
+zal bijna nooit veranderen zoals de naam van de organisatie. 
 
 De document_config bevat informatie die alleen relevant is voor het huidige document.
 
-Beide configuratie bestanden worden gelinkt in de `index.html` file.
+Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
+hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
 
 **Markdown files** bevatten de content van het document. Alle content
 kan in 1 document, maar het is aan te raden om de content te splitsen
