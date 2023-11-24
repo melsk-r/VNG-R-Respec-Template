@@ -26,7 +26,7 @@ Aanpassingen maken aan het document gaat op 2 manieren:
 De **configuratie files** bevat informatie over de organisatie en over 
 de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
 voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files:
-[organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/js/organisation-config.js) en [config.js](js/config.js).
+[organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
 Deze files zijn te vinden in de `js` folder.
 
 De organisation_config bevat informatie over de organisatie, de informatie in deze file 
