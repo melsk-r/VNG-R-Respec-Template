@@ -28,10 +28,13 @@ Hieronder wordt de werkwijze beschreven waarbij de eerste 7 stappen moeten worde
 1. Open het [VNG-R Respec template](https://github.com/melsk-r/VNG-R-Respec-Template) en klik in de README op die pagina op de link 'Use this template';
 2. Je komt nu in het menu om een nieuwe repository aan te maken waarbij al een aantal velden is ingevuld. De te maken repository mag niet private zijn want dat maakt het gebruik van GitHub Pages onmogelijk. Geef de van de aanvrager verkregen repository naam in en klik op 'Create repository';
 3. Voer de acties, zoals beschreven in [de handleiding voor het initieel inrichten van GitHub repositories](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/Standaard-inrichting-GitHub-GitLab.md), uit;
-4. Verwijder in de root van de repository het 'README.md' bestand en hernoem 'Alt-README.md' naar 'README.md' &lt;-- Nog te creëren in het template;
-5. Activeer GitHub Pages voor de nieuwe repository. Selecteer daarvoor het tabblad 'Settings' en kies daar 'Pages';
-6. Kies daar waar bij Branch 'None' staat voor 'main' en klik op 'Save';
-7. Nadat de build en deployment is uitgevoerd ga je naar het 'Code' tabblad, klikt daar op het tandwieltje bij 'About' en klikt op de checkbox naast 'Use your GitHub Pages website'. Klikken op de resulterende link onder 'About' brengt je naar de standaard gegenereerde Repsec documentatie die nu kan worden aangepast door de eigenaar van de repository;
+4. Verwijder in de root van de repository het 'README.md' bestand en hernoem 'Alt-README.md' naar 'README.md'
+
+> Dat bestand moet nog gecreëerd worden in het template;
+
+6. Activeer GitHub Pages voor de nieuwe repository. Selecteer daarvoor het tabblad 'Settings' en kies daar 'Pages';
+7. Kies daar waar bij Branch 'None' staat voor 'main' en klik op 'Save';
+8. Nadat de build en deployment is uitgevoerd ga je naar het 'Code' tabblad, klikt daar op het tandwieltje bij 'About' en klikt op de checkbox naast 'Use your GitHub Pages website'. Klikken op de resulterende link onder 'About' brengt je naar de standaard gegenereerde Repsec documentatie die nu kan worden aangepast door de eigenaar van de repository;
 
 #### Door repository eigenaar uit te voeren acties
 
@@ -42,8 +45,9 @@ Hieronder wordt de werkwijze beschreven waarbij de eerste 7 stappen moeten worde
    Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand en 'XXXX' door een id dat de sectie duidelijk en uniek identificeert.
    Als je nu op de website link onder 'About' klikt dan vind je de eerste versie van je Respec document;
 
-<!-- Over welke content een Respec bestand moet hebben zullen we nog moeten discussiëren. Hieronder ga ik er even vanuit dat alle nu aanwezige secties ook  aanwezig moeten zijn. -->
 #### Het Respec document uitbreiden met andersoortige content
+
+> Over welke content een Respec bestand (minimaal) moet hebben zullen we nog moeten discussiëren. Hieronder ga ik er evenwel vanuit dat alle nu aanwezige secties ook aanwezig moeten zijn.
 
 Een Respec document kan op 2 verschillende manier van content worden voorzien:
 * m.b.v. de 'content' configuratie property;
@@ -69,4 +73,6 @@ De 'abstract' sectie moet gevuld worden met een door jezelf te maken samenvattin
 
 Zoals aangegeven maken we in het Respec framework gebruik van een aantal VNG-R properties. Properties die er voor zorgen dat alle Respec documentatie van VNG-R eenzelfde look en feel heeft. Er zijn echter ook een aantal lokale configuratie properties waarmee voor ieder Respec document eigen keuzes kunnen worden gemaakt. Denk daarbij aan de status die het document heeft, de publicatie datum, de editors, etc...
 
-Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je naar eigen inzicht aanpassen. &lt;-- er moet nog bepaald worden welke properties lokaal moeten zijn en welke globaal (dus welke behoren te staan in de repository 'Respec-Organization-configurations').
+Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je naar eigen inzicht aanpassen. 
+
+> Er moet nog bepaald worden welke properties lokaal moeten zijn en welke globaal (dus welke behoren te staan in de repository 'Respec-Organization-configurations').
