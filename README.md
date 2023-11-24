@@ -21,7 +21,7 @@ Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstu
 
 Aanpassingen maken aan het document gaat op 2 manieren:
 - De configuratie van het document aanpassing in de config files
-- Markdown files toevoegen/veranderen
+- Markdown of html files toevoegen/veranderen
 
 De **configuratie files** bevat informatie over de organisatie en over 
 de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
