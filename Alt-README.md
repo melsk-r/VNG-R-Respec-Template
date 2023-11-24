@@ -7,9 +7,9 @@ Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. 
 | Configuratieproperty | Mogelijke waarden | Uitleg |
 | --- | --- | -- |
 | createoffice | html, doc, none | Hiermee geef je aan of je een documentatie bestand wil genereren en zo ja in welk formaat (html of MsWord). De defaultwaarde is 'none', behalve in het geval van een SIM, daar is de default 'html'. De 'doc' optie is nog niet geïmplementeerd. |
-| createofficeanchor | name, id | Geeft aan op welke basis hyperlink anchors moeten worden gegenereerd (op basis van id's of op basis van namen). De default is 'name'. Bij het genereren van zowel respec als msword zie ik geen verschillen. Vooralsnog maakt het dus niet uit welke variant je kiest. |
+| createofficeanchor | name, id | Geeft aan op welke basis hyperlink anchors moeten worden gegenereerd (op basis van id's of op basis van namen). De default is 'name'. Tussen het genereren van respec als msword treden geen verschillen op. Vooralsnog maakt het dus niet uit welke variant je voor deze property kiest. |
 | createofficemode | plain, click | Definieert of er in het te genereren bestand hyperlinks moeten worden gegenereert. Bij de waarde 'click' is dat het geval. De defaultwaarde is 'plain'. |
-| createofficevariant | respec, msword | Definieert het type te genereren document. Een Respec html document of een MsWord html variant. Meerdere formaten zijn toegestaan mits gescheiden door een spatie. |
+| createofficevariant | respec, msword | Definieert het type te genereren document. Een Respec html document of een MsWord html variant. |
 | createimagemap | yes, no | Definieert of van de Diagrammen een imagemap moet worden gegenereerd. De default is 'yes'.|
 
 Voor het genereren van Respec documentatie is het essentieel om in je lokale property bestand de property 'createofficevariant' de waarde 'respec' te geven. Normaliter zal je dan ook de property 'createofficemode' de waarde 'click' geven.
