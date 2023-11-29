@@ -83,7 +83,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 	<thead valign="top" align="left">
 		<tr>
 			<th>Property</th>
-			<th>Link</th>
+			<th><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">Link</a></th>
 			<th>Type</th>
 			<th>Globaal/Lokaal</th>
 			<th>Vaste globale waarde of default waarde</th>
@@ -96,7 +96,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 	<tbody valign="top" align="left">
 		<tr>
 			<td>addSectionLinks</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/alternateFormats">link</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>false</td>
@@ -107,7 +107,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>alternateFormats</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">link</a></td>
 			<td>Array van properties per formaat.</td>
 			<td>Lokaal</td>
 			<td/>
@@ -118,7 +118,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>authors</td>
-			<td>link</td>
+			<td><a href="">link</a></td>
 			<td>Array van properties per naam.</td>
 			<td>Lokaal</td>
 			<td/>
@@ -166,7 +166,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>editors</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">link</a></td>
 			<td>Array van properties per naam.</td>
 			<td>Lokaal</td>
 			<td/>
@@ -177,7 +177,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>formerEditors</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">link</a></td>
 			<td>Array van properties per naam.</td>
 			<td>Lokaal</td>
 			<td/>
@@ -188,7 +188,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>github</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/github">link</a></td>
 			<td>URI of set van 2 properties</td>
 			<td>Lokaal</td>
 			<td/>
@@ -210,7 +210,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>labelColor</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">link</a></td>
 			<td>Hexadecimale colorcode</td>
 			<td>Globaal</td>
 			<td>n.v.t.</td>
@@ -221,7 +221,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>latestVersion</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
 			<td>?</td>
 			<td/>
@@ -235,7 +235,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>license</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/license">link</a></td>
 			<td>enumeration</td>
 			<td>Globaal</td>
 			<td>eupl</td>
@@ -247,7 +247,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>licenses</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">link</a></td>
 			<td>Array van properties per licentiecode.</td>
 			<td>Globaal</td>
 			<td>n.v.t.</td>
@@ -258,7 +258,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>localBiblio</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">link</a></td>
 			<td>1 of meerdere objecten met set van properties.</td>
 			<td>?</td>
 			<td>n.t.b.</td>
@@ -273,7 +273,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>localizationStrings</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">link</a></td>
 			<td>Array van properties per taalcode</td>
 			<td>Globaal</td>
 			<td>n.v.t.</td>
@@ -285,7 +285,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>logos</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">link</a></td>
 			<td>Array van taalcode</td>
 			<td>Globaal</td>
 			<td>VNG Realisatie logo</td>
@@ -296,7 +296,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>maxTocLevel</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">link</a></td>
 			<td>Integer</td>
 			<td>Lokaal</td>
 			<td>0</td>
@@ -307,7 +307,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>nl_organisationName</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">link</a></td>
 			<td>String</td>
 			<td>Globaal</td>
 			<td>VNG Realisatie</td>
@@ -319,7 +319,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>nl_organisationPublishURL</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">link</a></td>
 			<td>URL</td>
 			<td>Globaal</td>
 			<td>?</td>
@@ -331,7 +331,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>nl_organisationStylesURL</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">link</a></td>
 			<td>URL</td>
 			<td>Globaal</td>
 			<td>?</td>
@@ -343,7 +343,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>noTOC</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/noTOC">link</a></td>
 			<td>boolean</td>
 			<td>Lokaal</td>
 			<td>false</td>
@@ -354,7 +354,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>otherLinks</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/otherLinks">link</a></td>
 			<td>Array van properties</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
@@ -365,7 +365,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>postProcess</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/postProcess">link</a></td>
 			<td/>
 			<td>?</td>
 			<td>?</td>
@@ -376,7 +376,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>previousMaturity</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">link</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
@@ -388,7 +388,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>previousPublishDate</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">link</a></td>
 			<td>Datum in het formaat YYYY-MM-DD</td>
 			<td>Lokaal</td>
 			<td/>
@@ -412,7 +412,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>prevVersion</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
 			<td>?</td>
 			<td/>
@@ -427,7 +427,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>pubDomain</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">link</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
@@ -448,7 +448,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>publishDate</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishDate">link</a></td>
 			<td>Datum in het formaat YYYY-MM-DD</td>
 			<td>Lokaal</td>
 			<td/>
@@ -460,7 +460,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>publishVersion</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">link</a></td>
 			<td>SemVer notatie</td>
 			<td>Lokaal</td>
 			<td/>
@@ -472,7 +472,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>shortName</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">link</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
 			<td/>
@@ -484,7 +484,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>sotdText</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">link</a></td>
 			<td>Array van properties per taalcode.</td>
 			<td>Globaal</td>
 			<td>n.v.t.</td>
@@ -495,7 +495,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>specStatus</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">link</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
@@ -508,7 +508,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>spectype</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">link</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
@@ -519,7 +519,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>subtitle</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/subtitle">link</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
@@ -530,7 +530,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>testSuiteURI</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/testSuiteURI">link</a></td>
 			<td>URL</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
@@ -541,7 +541,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>thisVersion</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
 			<td>?</td>
 			<td/>
@@ -567,7 +567,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>useLabel</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">link</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>true</td>
@@ -580,7 +580,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>useLogo</td>
-			<td>link</td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">link</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>true</td>
@@ -592,7 +592,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 		</tr>
 		<tr>
 			<td>useSideBar</td>
-			<td>link</td>
+			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
 			<td>URL</td>
 			<td/>
 			<td/>
