@@ -189,7 +189,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Te gebruiken voor het toevoegen van content aan het Respec document.<td/>
+			<td>Te gebruiken voor het toevoegen van content aan het Respec document.</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
 			<td>Gereed</td>
 		</tr>
