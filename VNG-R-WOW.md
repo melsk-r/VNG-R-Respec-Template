@@ -1,6 +1,6 @@
-## Respec documentatie
+# Respec documentatie
 
-### Generatie m.b.v. Imvertor
+## Generatie m.b.v. Imvertor
 
 Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. Daarbij spelen de volgende configuratieproperties een rol:
 
@@ -15,7 +15,7 @@ Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. 
 Voor het genereren van Respec documentatie is het essentieel om in je lokale property bestand de property 'createofficevariant' de waarde 'respec' te geven. Normaliter zal je dan ook de property 'createofficemode' de waarde 'click' geven.
 Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 in html en de ander in xhtml.
 
-### Toepassing in GitHub
+## Toepassing in GitHub
 
 De acties die in de voorgaande paragraaf staan beschreven leveren alleen het html bestand voor de Respec documentatie op. Respec documentatie bestaat echter uit meer dan dat html bestand. Een deel van de content van de Respec documentatie wordt door het Respec framework in GitHub gegenereerd a.d.h.v. een aantal variabelen en toe te voegen html en/of md bestanden. Daarnaast verzorgt dat framework ook de vormgeving dat essentieel is voor Respec documentatie.
 
@@ -24,7 +24,7 @@ Het template zelf kan echter door eenieder worden gebruikt om de eigen Respec do
 
 Hieronder wordt de werkwijze beschreven waarbij de eerste 7 stappen moeten worden uitgevoerd door een GitHub organisatie administrator. Voorzie hem daarvoor van de gewenste respository naam.
 
-#### Door administrator uit te voeren acties
+### Door administrator uit te voeren acties
 1. Open het [VNG-R Respec template](https://github.com/melsk-r/VNG-R-Respec-Template) en klik in de README op die pagina op de link 'Use this template';
 2. Je komt nu in het menu om een nieuwe repository aan te maken waarbij al een aantal velden is ingevuld. De te maken repository mag niet private zijn want dat maakt het gebruik van GitHub Pages onmogelijk. Geef de van de aanvrager verkregen repository naam in en klik op 'Create repository';
 3. Voer de acties, zoals beschreven in [de handleiding voor het initieel inrichten van GitHub repositories](https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/Standaard-inrichting-GitHub-GitLab.md), uit;
@@ -36,7 +36,7 @@ Hieronder wordt de werkwijze beschreven waarbij de eerste 7 stappen moeten worde
 7. Kies daar waar bij Branch 'None' staat voor 'main' en klik op 'Save';
 8. Nadat de build en deployment is uitgevoerd ga je naar het 'Code' tabblad, klikt daar op het tandwieltje bij 'About' en klikt op de checkbox naast 'Use your GitHub Pages website'. Klikken op de resulterende link onder 'About' brengt je naar de standaard gegenereerde Repsec documentatie die nu kan worden aangepast door de eigenaar van de repository;
 
-#### Door repository eigenaar uit te voeren acties
+### Door repository eigenaar uit te voeren acties
 
 8. Je beschikt nu over een repository die je kunt gaan vullen en waarin je je persoonlijke configuratie properties van een waarde kunt voorzien. Plaats daartoe als eerste het in de voorgaande paragraaf gegenereerde html bestand in de root van de repository;
 9. Van het bestand dat we zojuist geplaatst hebben gebruiken we alleen de 'section' met het id 'cat'. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand;
@@ -45,9 +45,7 @@ Hieronder wordt de werkwijze beschreven waarbij de eerste 7 stappen moeten worde
    Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand en 'XXXX' door een id dat de sectie duidelijk en uniek identificeert.
    Als je nu op de website link onder 'About' klikt dan vind je de eerste versie van je Respec document;
 
-#### Het Respec document uitbreiden met andersoortige content
-
-> Over welke content een Respec bestand (minimaal) moet hebben zullen we nog moeten discussiëren. Hieronder ga ik er evenwel vanuit dat alle nu aanwezige secties ook aanwezig moeten zijn.
+### De content van het Respec document aanpassen
 
 Een Respec document kan op 2 verschillende manier van content worden voorzien:
 * m.b.v. de 'content' configuratie property;
@@ -55,19 +53,72 @@ Een Respec document kan op 2 verschillende manier van content worden voorzien:
 
 Beide methodes kunnen elkaar aanvullen en kennen eigen functionaliteiten.
 
-Het Respec document zoals dat van het VNG-R Respec template is overgenomen kent nog een aantal secties die aangepast danwel vervangen moeten worden. Deels gebeurd dat door 'index.html' en deels door de configuration property 'content' aan te passen.  
+Het Respec document zoals dat van het VNG-R Respec template is overgenomen moet nog aangepast worden. Deels kan dat door in de 'index.html' secties aan te passen danwel te vervangen en deels door de configuration property 'content' aan te passen.  
 
-M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd.
-Secties die op deze wijze zijn toegevoegd worden automatisch op de plaats toegevoegd waar in het 'index.html' bestand het script in de body staat. Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd of worden uitbecommentarieerd.
+M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd. 
 
-In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel secties worden toegevoegd waarvan de content uit markdown bestaat als secties waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is kunnen we het alleen toevoegen aan het Respec document door een sectie toe te voegen aan het index.html bestand. Het 'index.html' bestand zoals van het VNG-R Respec template is overgenomen kent nog een aantal andere secties, te weten:
-* De 'abstract' sectie.  
-* De 'sotd' (Status Of The Document) sectie.
-* De 'conformance' sectie.
-* De 'tof' (Table Of Figures) sectie.
-* De 'index' sectie.
+Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd of worden uitbecommentarieerd.
 
-De 'abstract' sectie moet gevuld worden met een door jezelf te maken samenvatting. Vervang daarvoor de inhoud van het bestand 'abstract.md'. Afhankelijk van de waarde van de configuration property 'specStatus' wordt de 'sotd' sectie automatisch gevuld. Ook de andere 3 secties worden automatisch gevuld, het algoritme dat daar achter zit moet nog onderzocht worden. Als je een van de bovenstaande secties niet opgenomen wil hebben dan moet je deze verwijderen uit het 'index.html' bestand.
+In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel 'sectie' elementen worden toegevoegd waarvan de content uit markdown bestaat als 'sectie' elementen waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is kunnen we het alleen toevoegen aan het Respec document door een 'sectie' element toe te voegen aan het index.html bestand.
+
+Bij de methode met de 'sectie' elementen maken we nog verschil tussen 'sectie' elementen met specifieke waarden voor het 'id' attribuut en 'sectie' elementen die andere waarden voor dat 'id' attribuut hebben of die zelfs helemaal geen 'id' attribuut hebben.
+
+Hieronder volgt per sectie een toelichting.
+
+#### Secties met 'id' attribuutwaarde 'abstract'
+
+* Indien de sectie wordt toegevoegd met ``<sectie id="abstract" data-include-format="markdown" data-include="filenaam.md">`` dan krijgt het hoofdstuk de titel Samenvatting zonder hoofdstuknr. als inhoud wordt de inhoud van het bestand 'filenaam.md' toegevoegd.
+* Indien de sectie wordt toegevoegd met ``<sectie id="nnnnnn" data-include-format="markdown" data-include="filenaam.md">`` dan wordt het hoofdstuk gevuld met de inhoud van 'filenaam.md'. Als 'filenaam.md' met een markdown titel start (ongeacht het level en het aantal blanco regels er voor) dan wordt een hoofdstuknummer voor die titel gegenereerd anders wordt de content zonder titel toegevoegd aan het document. Een evt. titel wordt ook opgenomen in de TOC.
+* Indien de sectie wordt toegevoegd met ``<sectie data-include-format="markdown" data-include="filenaam.md">`` dan wijkt het resultaat niet af van die van hierboven. Alleen wordt bij deze variant het 'id' van de sectie en de gerelateerde 'href' in de TOC gegenereerd op basis van de titel van deze sectie.
+
+In alle gevallen is ``data-include-format="markdown"`` verplicht.
+
+#### Secties met 'id' attribuutwaarde 'sotd'
+
+Toe te voegen m.b.v. ``<section id="sotd"></section>``. Leidt ertoe dat het hoofdstuk met de titel 'Status van het document' wordt toegevoegd met als inhoud de, van de waarde van de configuration property 'specStatus' afhankelijke, content van de configuration property 'sotdText'.
+
+Tevens wordt een TOC gegenereerd waarin de titels (incl. evt. hoofdstuk en paragraafnummers) van alle, in het document opgenomen, hoofdstukken en paragrafen worden opgenomen afhankelijk van de configuratie property 'maxTocLevel'. Ook de titels van 'sectie' elementen zonder 'id' attribuut worden daar opgenomen.
+
+Indien de configuration property 'content' bestaat dan worden de daarin gedefinieerde markdown bestanden na de 'sotd' sectie opgenomen.
+Zo niet dan worden de in de 'content' configuratie property gedefinieerde secties ook niet toegevoegd en wordt er ook geen TOC gegenereerd.
+
+#### Secties met ``data-include-format="html"``
+
+Dit soort secties wordt direct opgenomen op de plaats waar ``<section id="nnnn" data-include-format="html" data-include="filenaam.html"></section>`` is geplaatst.
+
+Het html fragment in het bestand hoeft niet te bestaan uit 1 root element. Sterker nog als dat wel het geval is en het fragment heeft de root 'div' of 'sectie' dan wordt het fragment niet vertaalt naar een separaat hoofdstuk.
+
+Om een separaat hoofdstuk te kunnen starten dient het document wel met een 'hx' element te starten (h1, h2, h3, etc..).
+
+De titel wordt dan ook opgenomen in de TOC.
+
+Dit soort secties mag ook zonder 'id' attribuut worden opgenomen. Die variant geeft geen ander resultaat dan die hiervoorgeschetst. Alleen wordt bij deze variant het id van de sectie en de gerelateerde href in de TOC gegenereerd op basis van de titel van deze sectie.
+
+``data-include-format="html"`` mag worden weggelaten.
+
+#### Secties met 'id' attribuutwaarde 'conformance'
+
+Door ``<section id='conformance'></section>`` wordt een hoofdstuk met als titel 'Conformiteit' toegevoegd. 
+
+De inhoud komt waarschijnlijk uit https://github.com/Logius-standaarden/respec. Het is nog niet duidelijk hoe dit hoofdstuk zijn inhoud krijgt.
+
+#### Secties met 'id' attribuutwaarde 'tof'
+
+``<section id='tof'></section>`` genereert een hoofdstuk met als titel 'Lijst met Figuren' als er in minimaal een van de opgenomen bestanden minimaal een html 'figure' element met een 'figcaption' element is opgenomen of een markdown equivalent daarvan ( '![Tekstueel alternatief voor toegankelijkheid](pad naar iluustratie bestand "Onderschrift")' ). In de markdown variant mag het onderschrift ontbreken.
+
+De titel komt waarschijnlijk uit https://github.com/Logius-standaarden/respec. Het is nog niet duidelijk hoe die titel wordt toegekend.
+
+#### Secties met 'id' attribuutwaarde 'index'
+
+``<section id="index"></section>`` genereert een hoofdstuk met als titel 'Bijlage N Index' als er in minimaal 1 van de in het document opgenomen bestanden (zowel markdown als html) minimaal 1 'dfn' element is opgenomen. Vanuit de tekst kan naar dat element verwezen worden door een 'a' element op te nemen zonder attributen maar met als inhoud de naam van een 'dfn' element.
+
+#### Bijlage N Referenties
+
+Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '[[Ref]]' en die referentie in config.js of organisation-config.js is gedefinieerd.
+
+#### Secties met een 'id' attribuutwaarde die niet overeenkomt met de hierboven geschetste varianten
+
+Indien het 'id' niet overeenkomt met een van de bekende id's dan wordt de sectie genegeerd.
 
 ### Lokale Respec configuratie properties
 
