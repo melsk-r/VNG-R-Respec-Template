@@ -104,8 +104,8 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 			<td>Globaal</td>
 			<td>false</td>
 			<td/>
-			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken voor staat, wordt gegenereerd of niet.<br/>Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.<br/><br/>Kan lokaal overruled worden.</td>
-			<td>Te bepalen of we Respec documentatie met of zonder paragraafteken willen genereren.</td>
+			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.<br/><br/>Kan lokaal overruled worden.</td>
+			<td>Te bepalen of we standaard Respec documentatie met of zonder paragraafteken willen genereren en of we wel willen dat dat lokaal overruled kan worden.</td>
 			<td>Gereed </td>
 		</tr>
 		<tr>
@@ -116,7 +116,8 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 			<td/>
 			<td/>
 			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt. De verantwoordleijkheid voor de creatie van die alternatieve formaten is aan de beheerder van de betreffende Respec repository.<br/>Deze configuratie property zorgt er alleen voor dat een zin gewijd wordt aan het/de betreffende alternatieve formaat/formaten en dat de link er naartoe wordt geplaatst in de Respec documentatie.</td>
-			<td>Of zo'n formaat aangeboden wordt lijkt me een lokale configuratie. Niet in de laatste plaats omdat het afhankelijk is van handmatige acties van de beheerder van de betreffende Respec repository.<br/><br/>Blijkbaar is het mogelijk met GitHub Actions PDF documenten te genereren. In dat geval is dit niet meer afhankelijk van handmatige acties en zou het opgenomen kunnen worden in de globale configuratie.</td>
+			<td>Of zo'n formaat aangeboden wordt lijkt me een lokale configuratie. Niet in de laatste plaats omdat het afhankelijk is van handmatige acties van de beheerder van de betreffende Respec repository.<br/><br/>
+			Blijkbaar is het ook mogelijk met GitHub Actions PDF documenten te genereren. In dat geval is dit niet meer afhankelijk van handmatige acties en zou het opgenomen kunnen worden in de globale configuratie. Dit moet nog onderzocht worden.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -137,9 +138,10 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Er zijn drie manieren om de daadwerkelijke content aan de specificatie toe te voegen:
+			<td>Te gebruiken voor he toevoegen van content aan het Respec document.<br/><br/>
+			Er zijn drie manieren om de daadwerkelijke content aan de specificatie toe te voegen:
 				<ul>
-					<li>m.b.v. de 'content' configuratie property en een javascriptje.</li>
+					<li>m.b.v. de 'content' configuratie property (deze property dus) en een javascriptje.</li>
 					<li>m.b.v. '&lt;section>' elementen.</li>
 					<li>m.b.v. '&lt;div>' elementen.</li>
 				</ul>
@@ -165,8 +167,8 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 				<code>&lt;section data-include="[html bestandsnaam]">&lt;/section></code>
 			</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt.</td>
-			<td>Gereed</td>
+			Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt en dat moet worden beschreven in de voorgaande kolom.</td>
+			<td/>
 		</tr>
 		<tr>
 			<td>editors</td>
@@ -290,7 +292,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 		<tr>
 			<td>logos</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">link</a></td>
-			<td>Array van properties per logo</td>
+			<td>Array van 5 properties per logo</td>
 			<td>Globaal</td>
 			<td>VNG Realisatie logo</td>
 			<td/>
