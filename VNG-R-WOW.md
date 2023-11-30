@@ -145,24 +145,24 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 				</ul>
 				De eerste methode kan alleen gebruikt worden voor het toevoegen van zelf vervaardigde markdown bestanden. Voor html bestanden moet de tweede of derde methode gebruikt worden.<br/><br/>Alle in deze property gedefinieerde arrays bestaan uit 2 waarden. Een waarde definieert het te plaatsen Markdown bestand maar wel zonder diens extensie en de tweede waarde bepaald of het om een normatieve of informatieve sectie gaat. 		
 				Normatief is de default wat betekent dat de waarde leeg kan blijven. Is de sectie informatief dan bevat het de waarde 'informative'. Hieronder een voorbeeld:<br/><br/>
-				<code>content: {""Inleiding"": ""informative"", ""Scope"": """", ""SIM-ORI"": """"}</code><br/><br/>
-				Deze property wordt vervolgens gebruikt door een script in 'index.html'.<br/>M.b.v. de code 'document.getElementById(""[id]"")' in het script wordt bepaald waar de reeks van markdown documenten wordt tussengevoegd. Waarbij '[id]' in dit voorbeeld verwijst naar het 'id' van de sectie waarna de in 'content' genoemde reeks van markdown bestanden moet worden opgenomen. Belangrijk daarbij is dat het script wordt geplaatst
+				<code>content: {"Inleiding": "informative", "Scope": "", "SIM-ORI": ""}</code><br/><br/>
+				Deze property wordt vervolgens gebruikt door een script in 'index.html'.<br/>M.b.v. de code 'document.getElementById("[id]")' in het script wordt bepaald waar de reeks van markdown documenten wordt tussengevoegd. Waarbij '[id]' in dit voorbeeld verwijst naar het 'id' van de sectie waarna de in 'content' genoemde reeks van markdown bestanden moet worden opgenomen. Belangrijk daarbij is dat het script wordt geplaatst
 				na het '&lt;section>' element met het 'id' dat gebruikt wordt.<br/><br/>Het script kan evt. gedupliceerd worden om ergens anders een andere reeks van markdown bestanden in te kunnen voegen. Er dient dan wel een extra content configuratie property in de 'js/config.js' te worden geplaatst met een afwijkende naam (bijv. 'content2') en ook de variabelen in het script moeten worden hernoemd.<br/><br/>De tweede methode
 				wordt veelal gebruikt voor:
 				<ul>
 					<li>het toevoegen van hoofdstukken waarvan de inhoud van extern wordt betrokken zoals 'Status van dit document', 'Conformiteit', 'Lijst met Figuren' en 'Index' (resp met het id 'sotd', 'conformance', 'tof' en 'index'). Indien configuratie optie 'specStatus' een waarde waarde heeft waarvoor in de organisation-config.js geen bijbehorende tekst is gedefinieerd in de configuratie optie 'sotdText' dan wordt deze sectie niet gegenereerd.</li>
 					<li>maar kan ook gebruikt worden voor het toevoegen van zelf vervaardigde markdown of html bestanden.<br/><br/>In het eerste geval volstaat de volgende syntax (nr. 1):<br/><br/>
-						<code>&lt;section id=""[id]"">&lt;/section></code><br/><br/>
+						<code>&lt;section id="[id]">&lt;/section></code><br/><br/>
 						In het tweede geval geldt deze syntax (nr. 2):<br/><br/>
-						<code>&lt;section id=""[uniek-id]"" data-include-format=""markdown"" data-include=""[markdown bestandsnaam]"">&lt;/section></code><br/><br/>
+						<code>&lt;section id="[uniek-id]" data-include-format="markdown" data-include="[markdown bestandsnaam]">&lt;/section></code><br/><br/>
 						of (nr. 3)<br/><br/>
-						<code>&lt;section id=""[uniek-id]"" data-include=""[html bestandsnaam]"">&lt;/section></code>
+						<code>&lt;section id="[uniek-id]" data-include="[html bestandsnaam]">&lt;/section></code>
 					</li>
 				</ul>
 				<br/>De derde methode kan alleen gebruikt worden voor zelfvervaardigde markdown of html bestanden maar werkt verder hetzelfde zoals in de voorgaande methode beschreven bij syntax 2 en 3. Het 'id' attribute mag echter weggelaten worden. Dus:<br/><br/>
-				<code>&lt;section data-include-format=""markdown"" data-include=""[markdown bestandsnaam]"">&lt;/section></code><br/><br/>
+				<code>&lt;section data-include-format="markdown" data-include="[markdown bestandsnaam]">&lt;/section></code><br/><br/>
 				of<br/><br/>
-				<code>&lt;section data-include=""[html bestandsnaam]"">&lt;/section></code>
+				<code>&lt;section data-include="[html bestandsnaam]">&lt;/section></code>
 			</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt.</td>
