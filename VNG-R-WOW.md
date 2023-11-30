@@ -57,10 +57,10 @@ Beide methodes kunnen elkaar aanvullen en kennen eigen functionaliteiten.
 
 Het Respec document zoals dat van het VNG-R Respec template is overgenomen kent nog een aantal secties die aangepast danwel vervangen moeten worden. Deels gebeurd dat door 'index.html' en deels door de configuration property 'content' aan te passen.  
 
-M.b.v. de 'content' property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd.
-Secties die op deze wijze zijn toegevoegd worden automatisch op de plaats toegevoegd waar in het 'index.html' bestand het script in de body staat. Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd.
+M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd.
+Secties die op deze wijze zijn toegevoegd worden automatisch op de plaats toegevoegd waar in het 'index.html' bestand het script in de body staat. Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd of worden uitbecommentarieerd.
 
-In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel secties worden toegevoegd waarvan de content uit markdown bestaat als secties waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is konden we het alleen toevoegen aan het Respec document door een sectie toe te voegen aan het index.html bestand. Het 'index.html' bestand zoals van het VNG-R Respec template is overgenomen kent nog een aantal andere secties, te weten:
+In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel secties worden toegevoegd waarvan de content uit markdown bestaat als secties waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is kunnen we het alleen toevoegen aan het Respec document door een sectie toe te voegen aan het index.html bestand. Het 'index.html' bestand zoals van het VNG-R Respec template is overgenomen kent nog een aantal andere secties, te weten:
 * De 'abstract' sectie.  
 * De 'sotd' (Status Of The Document) sectie.
 * De 'conformance' sectie.
@@ -138,7 +138,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Te gebruiken voor he toevoegen van content aan het Respec document.<br/><br/>
+			<td>Te gebruiken voor het toevoegen van content aan het Respec document.<br/><br/>
 			Er zijn drie manieren om de daadwerkelijke content aan de specificatie toe te voegen:
 				<ul>
 					<li>m.b.v. de 'content' configuratie property (deze property dus) en een javascriptje.</li>
@@ -166,7 +166,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 				of<br/><br/>
 				<code>&lt;section data-include="[html bestandsnaam]">&lt;/section></code>
 			</td>
-			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt en dat moet worden beschreven in de voorgaande kolom.</td>
 			<td/>
 		</tr>
