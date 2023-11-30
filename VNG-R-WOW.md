@@ -164,7 +164,8 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 				of<br/><br/>
 				<code>&lt;section data-include=""[html bestandsnaam]"">&lt;/section></code>
 			</td>
-			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/>Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt.</td>
+			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			Er moet nog onderzocht worden hoe de eerste syntax van de tweede methode aan haar content komt.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
