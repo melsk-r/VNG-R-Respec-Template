@@ -55,7 +55,17 @@ Beide methodes kunnen elkaar aanvullen en kennen eigen functionaliteiten.
 
 Het Respec document zoals dat van het VNG-R Respec template is overgenomen moet nog aangepast worden. Deels kan dat door in de 'index.html' secties aan te passen danwel te vervangen en deels door de configuration property 'content' aan te passen.  
 
-M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd. 
+M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd.
+Het toevoegen van bestanden aan de 'content' configuratie property doe je door de naam van het bestand (zonder de extensie) en een eventueel relevante CSS class in de property te plaatsen.
+De volgorde van bestanden binnen ```content``` bepaalt de volgorde in het resulterende document.
+
+De code ```content: {"ch01": "informative", "mermaid": ""},``` voegt 2 markdown bestanden toe, te weten:
+- `ch01.md` met de CSS class `informative`;
+- `mermaid.md` zonder CSS class.
+
+Voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes). Deze classes zijn ook binnen de markdown files te gebruiken op de volgende manier: 
+
+```<div class="example">voorbeeld</div>```
 
 Het gebruik van de 'content' properties is niet verplicht, er mag voor worden gekozen nieuwe content alleen toe te voegen door het 'index.html' bestand aan te passen. De 'content' property moet dan wel uit het lokale 'js/config.js' bestand worden verwijderd of worden uitbecommentarieerd.
 
