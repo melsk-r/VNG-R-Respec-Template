@@ -7,7 +7,7 @@ Gebruik de knop [_Use this template_](https://github.com/melsk-r/VNG-R-Respec-Te
 De dynamische pagina van het template document is [hier](https://melsk-r.github.io/VNG-R-Respec-Template/) te zien.
 
 Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
-automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch.
+automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch. <-- Deze heb ik nog niet werkende.
 
 ### Vereiste voor gebruik
 - Kennis van git/github
@@ -28,35 +28,17 @@ de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Lo
 voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files die weer in 2 verschillende repositories zijn ondergebracht:
 [organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
 
-De organisation_config bevat informatie over de organisatie, de informatie in deze file 
-zal bijna nooit veranderen zoals de naam van de organisatie. 
+De organisation_config bevat configuratie properties die betrekking hebben op alle VNG-R Respec documentatie, de properties in deze file 
+zullen zelden veranderen zoals bijv. de naam van de organisatie. 
 
-De document_config bevat informatie die alleen relevant is voor het huidige document.
+De document_config bevat configuratie properties die alleen relevant is voor het betreffende Respec document.
 
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
 
-**Markdown files** bevatten de content van het document. Alle content
-kan in 1 document, maar het is aan te raden om de content te splitsen
-in verschillende files met een toepasselijke naam om onderhoud 
-makkelijker te maken.
+In VNG-R-WOW.md staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
-Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
-aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
-toe te voegen aan het ```content``` object in de ```config.js```. 
-De volgorde van ```content``` bepaalt de volgorde in het resulterende document.
-
-```content: {"ch01": "informative", "mermaid": ""},```
-Deze code voegt 2 markdown files toe:
-- `ch01.md` met de CSS class `informative`
-- `mermaid.md` zonder CSS class
-
-voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
-
-Deze classes zijn ook binnen de markdown files te gebruiken op de volgende manier:  
-```<div class="example">voorbeeld</div>```
-
-### Automatische controles
+### Automatische controles  <-- Deze heb ik nog niet werkende.
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
 
