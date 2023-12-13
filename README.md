@@ -42,13 +42,11 @@ In VNG-R-WOW.md staat beschreven hoe je de inhoud van het Respec document naar w
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
 
-Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines
-gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
-van webapplicaties verbeterd voor zowel verschillende apparaten 
-als voor mensen met een beperking.
+Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid van webapplicaties verbeterd voor zowel verschillende apparaten  als voor mensen met een beperking. Ook wordt de validiteit van het HTML bestand gecheckt, bijv.:
+* of er geen `<section>` elementen met 'id' attributen voorkomen die al voorkomen in het bestand;
+* of er geen `<a>` elementen voorkomen met 'href' attributen die verwijzen naar `<section>` elementen die helemaal niet bestaan.
 
-Een link-check, deze check controleert of alle links die in het 
-document staan ook naar iets wijzen.
+Een link-check, deze check controleert of alle links die in het document staan ook naar iets wijzen.
 
 outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
 
