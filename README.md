@@ -38,21 +38,19 @@ hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat
 
 In VNG-R-WOW.md staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
-### Automatische controles  <-- Deze heb ik nog niet werkende.
-Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
-uitgevoerd:  
+### Rendering, automatische controles en publicatie
+Het bestand '.github/workflows/build.yml' bevat een action script waarmee automatisch een drietal acties worden uitgevoerd nadat een bestand in de repository wordt gewijzigd, toegevoegd of verwijderd:
+* het renderen van het Respec document;
+* het checken of de gerenderde Respec html wel correct is en voldoet aan de toegankelijkheidseisen;
+* het publiceren van de gegenereerde statische html en pdf naar een centrale Respec publicatie repository.
 
-Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid van webapplicaties verbeterd voor zowel verschillende apparaten  als voor mensen met een beperking. Ook wordt de validiteit van het HTML bestand gecheckt, bijv.:
-* of er geen `<section>` elementen met 'id' attributen voorkomen die al voorkomen in het bestand;
-* of er geen `<a>` elementen voorkomen met 'href' attributen die verwijzen naar `<section>` elementen die helemaal niet bestaan.
+We beschrijven alle 3 de acties in het kort hieronder. Aangezien we de laatste actie nog niet werkende hebben wordt deze voorlopig nog handmatig uitgevoerd, ook dat beschrijven we. 
+De resultaten van deze acties zijn te vinden in het tabblad `Actions` in de GitHub repository.
 
-Een link-check, deze check controleert of alle links die in het document staan ook naar iets wijzen.
+#### Rendering
+Deze actie start het renderen van de Respec html. Vervolgens wordt er op basis daarvan een statische html en een pdf bestand gegenereerd. Die laatste 2 worden in de laatste actie gebruikt om te publiceren.
 
-outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
-
-### Publiceren van documenten
-Na een update in de main branch wordt er een statische HTML en een PDF-versie gepubliceerd, indien de repo onder [Logius-standaarden](https://github.com/Logius-standaarden) op GitHub staat.
-De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
+De PDF-versie wordt alleen aangemaakt indien `alternateFormats` in de document_config (config.js) als volgt geconfigureerd staat:
 ```js
 alternateFormats: [
   {
@@ -61,3 +59,18 @@ alternateFormats: [
   },
 ]
 ```
+
+#### Checken
+Na het renderen van de Respec html en pdf worden er via github actions 2 controles uitgevoerd op de html:  
+
+* een WCAG-check (Web Content Accessibility Guidelines), deze guidelines gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid van webapplicaties verbeterd voor zowel verschillende apparaten  als voor mensen met een beperking. Ook wordt de validiteit van het HTML bestand gecheckt, bijv.:
+  - of er geen `<section>` elementen met 'id' attributen voorkomen die al voorkomen in het bestand;
+  - of er geen `<a>` elementen voorkomen met 'href' attributen die verwijzen naar `<section>` elementen die helemaal niet bestaan.
+
+  Deze check moet eerst succesvol uitgevoerd zijn voordat wordt begonnen aan de volgende check. In de 'Action' die start met het woord 'Update' (zie het `Actions` tabblad) kun je in de actie 'Check/WCAG' de step 'Run pa11y snapshot.html' vinden. Daar kun je zien welke fouten geconstateerd zijn.
+* een link-check, deze check controleert of alle links die in het document staan ook bestaan.
+
+### Publiceren van documenten
+Het is de bedoeling dat het publiceren van de statische html en pdf geautomatiseerd gaat verlopen. Dat hebben we helaas nog niet op orde en om die reden doen we dit voorlopig handmatig.
+
+Het publiceren van alle Respec documenten gebeurd via de GitHub repository 'gitdocumentatie'
