@@ -28,10 +28,10 @@ de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Lo
 voor meer informatie over de configuratie opties. De files zijn gesplitst in 2 files die weer in 2 verschillende repositories zijn ondergebracht:
 [organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
 
-De organisation_config bevat configuratie properties die betrekking hebben op alle VNG-R Respec documentatie, de properties in deze file 
+De organisation_config (organisation-config.js) bevat configuratie properties die betrekking hebben op alle VNG-R Respec documentatie, de properties in deze file 
 zullen zelden veranderen zoals bijv. de naam van de organisatie. 
 
-De document_config bevat configuratie properties die alleen relevant is voor het betreffende Respec document.
+De document_config (config.js) bevat configuratie properties die alleen relevant is voor het betreffende Respec document en hoort dan ook in elke Respec renderende repository thuis.
 
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
