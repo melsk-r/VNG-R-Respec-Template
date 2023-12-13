@@ -212,10 +212,12 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 </section></section><section id="mermaid-diagram"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2>
 <figure id="fig-mermaid-voorbeeld">
 
-<pre><code class="mermaid hljs" data-processed="true" aria-busy="false">A
-B
-C
-D</code></pre>
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</code></pre>
 <figcaption><a class="self-link" href="#fig-mermaid-voorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
 </figure></section>
   <script>
@@ -886,7 +888,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
 
 
 
-<div class="mermaidTooltip" style="opacity: 0;"></div><section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
+<section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
     <h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3>
     <dl class="bibliography"><dt id="bib-ref">[Ref]</dt><dd>
       <em class="respec-offending-element">Reference not found.</em>
@@ -897,7 +899,7 @@ Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled w
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
+  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
