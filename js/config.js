@@ -8,9 +8,9 @@ let respecConfig = {
   specType: "HR",
  
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "DEF",
+  specStatus: "WV",
   publishDate: "2023-12-14",
-  publishVersion: "1.0.0",
+  publishVersion: "0.1.0",
   
   // Zie 'localizationStrings/nl' voor de lijst met toegestane maturities
   previousMaturity: "WV",
@@ -18,7 +18,7 @@ let respecConfig = {
   previousPublishVersion: "0.0.1",
 
   title: "Generating Respec documentation",
-  content: {"README": "informative", "ch01": "informative", "ch02": "informative", "mermaid": "informative"},
+  content: {"ch01": "", "ch02": "", "mermaid": "informative"},
 //  editors:
 //    [
 //      {
