@@ -1,1 +1,4 @@
-Tekst
+Dit document bevat een uitleg van de toepassing van Resepc documentatie binnen VBG Realisatie. 
+* In hoofdstuk 1 wordt de werking van het template uitgelegd. Hoe je het kunt gebruiken voor je eigen specificatie, wat er precies gebeurd als je er mee aan de gang gaat en waar je daarbij op moet letten.
+* Hoofdstuk 2 beschrijft hoe je binnen Imvertor (indien toegepast) de content van je specificatie kan genereren, waar je op moet letten als je het template kopieert (zowel als admin als als gebruiker), hoe je de Respec documentatie naast de door Imvertor gegenereerde comtent nog kan voorzien van andere content en hoe je door het aanpassen van configuration properties de stijl van het document kan veranderen daarbij rekening houdend met wat wij binnen VNG Realisatie met elkaar hebben afgesproken.
+* De hoofdstukken volgend op hoofdstuk 2 hebben slechts een illustratieve functie. Op basis daarvan moet je, samen met de uitleg in hoofdstuk 2, in staat zijn de getoonde functionaliteit te gebruiken. 
