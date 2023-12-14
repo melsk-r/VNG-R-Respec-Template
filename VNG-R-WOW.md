@@ -629,17 +629,17 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
 			<td>Gereed</td>
 		</tr>
-		<tr>
+		<!--tr>
 			<td>useSideBar</td>
-			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
-			<td>boolean</td>
+			<td>-</td>
 			<td/>
 			<td/>
 			<td/>
 			<td/>
+			<td>Functie van deze property is onbekend.</td>
 			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
 			<td/>
-		</tr>
+	</tr-->
 		<tr>
 			<td>edDraftURI</td>
 			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
