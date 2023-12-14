@@ -515,19 +515,19 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Korte naam van de specificatie.<br/><br/>
-				Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td/>
-			<td/>
+			<td>Korte naam (mnemonic) van de specificatie.<br/><br/>
+				Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
+			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>sotdText</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">link</a></td>
 			<td>Array van properties per taalcode.</td>
 			<td>Globaal</td>
-			<td>n.v.t.</td>
+			<td></td>
 			<td/>
-			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.</td>
+			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Mag niet lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
 			<td>Gereed</td>
 		</tr>
@@ -540,8 +540,8 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Definieert de status van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
-				Kan vermoedelijk ook worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td/>
+				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -551,8 +551,9 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.</td>
-			<td/>
+			<td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
+				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -562,7 +563,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
 			<td/>
-			<td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus, versiedatum en een evt. modifiedDatum worden gebruikt.</td>
+			<td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
 			<td/>
 			<td>Gereed</td>
 		</tr>
@@ -573,35 +574,35 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
 			<td/>
-			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.	</td>
-			<td/>
+			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
+			<td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
 			<td/>
 		</tr>
 		<tr>
 			<td>thisVersion</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
-			<td>?</td>
+			<td>Globaal</td>
 			<td/>
 			<td/>
 			<td>Url van de huidige versie.<br/>
-				Wordt opgebouwd m.b.v. andere gedefinieerde variabelen en '/' tekens.<br/><br/>
-				Indien deze variabele niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.</td>
+				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
+				Het is verplicht deze property van een waarde te voorzien en deze mag niet Lokaal overruled worden.</td>
 			<td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br/>
 				Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br/><br/>
-				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden.</td>
-			<td/>
+				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
+			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>title</td>
-			<td>n.t.b.</td>
+			<td>-</td>
 			<td/>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
 			<td>De titel van de betreffende specificatie.</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-			<td/>
+			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>useLabel</td>
@@ -631,15 +632,24 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>useSideBar</td>
 			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
+			<td>boolean</td>
+			<td/>
+			<td/>
+			<td/>
+			<td/>
+			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
+			<td/>
+		</tr>
+		<tr>
+			<td>edDraftURI</td>
+			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
 			<td>URL</td>
 			<td/>
 			<td/>
 			<td/>
-			<td/>
-			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.<br/><br/>
-				In dit record voorlopig de link naar de w3c uitleg opgenomen.<br/><br/>
-				Het is de vraag of wij deze property wel zullen gebruiken. Het wordt ten eerste nie geadviseerd om Editors Draft niet te publiceren maar daarnaast is het de vraag of wij de specStatus 'ED' wel kennen bij VNG-R.</td>
-			<td/>
+			<td>Beschrijft de url waar de draft van de specificatie kan worden bekeken. Er wordt geadviseerd de Editors Draft niet te publiceren.</td>
+			<td>Het is de vraag of wij deze property wel zullen gebruiken. Het wordt ten eerste niet geadviseerd om Editors Draft te publiceren maar daarnaast is het de vraag of wij de specStatus 'ED' wel kennen bij VNG-R.</td>
+			<td>Gereed</td>
 		</tr>
 	</tbody>
 </table>
