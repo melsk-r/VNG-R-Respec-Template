@@ -121,4 +121,4 @@ In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec docume
 
 ![image](https://github.com/melsk-r/VNG-R-Respec-Template/assets/20185784/0ad7caf7-7c5b-4e72-9bee-09f7e9a93656)
 
-De statische html en pdf worden vanuit de GitHub repository waarin ze gegenereerd zijn gekopieerd naar de gewenste folders in de 'publicatie' repository. Zo nodig dien je nieuwe folders aan te maken.
+De statische html en pdf worden vanuit de GitHub repository waarin ze gegenereerd zijn gekopieerd naar de gewenste folders in de 'publicatie' repository. Als het goed is heb je de gewenste folders in een van de voorgaande stappen al aangemaakt.
