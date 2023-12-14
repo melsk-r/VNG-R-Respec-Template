@@ -15,31 +15,30 @@ let respecConfig = {
   previousPublishDate: "2022-06-24",
   previousMaturity: "WV",
   title: "titleText",
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
-  editors:
-    [
-      {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
-      }
-    ],
+  content: {"README": "informative", "ch01": "informative", "ch02": "informative", "mermaid": "informative"},
+//  editors:
+//    [
+//      {
+//        name: "Robert Melskens",
+//        company: "VNG Realisatie",
+//        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+//      }
+//    ],
   authors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Robert Melskens",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
-
+  github: "https://github.com/melsk-r/VNG-R-Respec-Template",
 
   // Create PDF and link to file in header (optional):
   alternateFormats: [
       {
           label: "pdf",
-          uri: "template.pdf",
+          uri: "VNG-R-WOW.pdf",
       },
   ],
 };
