@@ -128,7 +128,7 @@ De titel komt waarschijnlijk uit https://github.com/Logius-standaarden/respec. H
 
 #### Bijlage N Referenties
 
-Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '&amp;lbrack;&amp;lbrack;Ref&amp;rbrack;&amp;rbrack;' en die referentie in config.js of organisation-config.js is gedefinieerd.
+Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '&amp;lbrack;Ref&amp;rbrack;' en die referentie in config.js of organisation-config.js is gedefinieerd.
 
 #### Secties met een 'id' attribuutwaarde die niet overeenkomt met de hierboven geschetste varianten
 
