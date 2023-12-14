@@ -179,13 +179,13 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td/>
 			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
-			<td>Het is de vraag of het aanbieden van een pdf formaat de verantwoordelijkheid behoort te zijn van de beheerder van een Respec repository.</td>
+			<td>Het is de vraag of het aanbieden van een pdf formaat de verantwoordelijkheid behoort te zijn van de beheerder van een Respec repository. Moet deze property dus Globaal of Lokaal zijn en indien Globaal kan/mag deze dan Lokaal overruled worden?</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>authors</td>
 			<td><a href="">link</a></td>
-			<td>Array van properties per naam.</td>
+			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
@@ -196,7 +196,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>content</td>
 			<td>n.t.b.</td>
-			<td>Array</td>
+			<td>Array (zie een beschrijving onder deze tabel)</td>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
@@ -207,7 +207,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>editors</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">link</a></td>
-			<td>Array van properties per naam.</td>
+			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
@@ -218,7 +218,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>formerEditors</td>
 			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">link</a></td>
-			<td>Array van properties per naam.</td>
+			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
@@ -229,7 +229,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>github</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/github">link</a></td>
-			<td>URI of set van 2 properties</td>
+			<td>URI of een array van de properties 'repoURL' en 'branch'.</td>
 			<td>Lokaal</td>
 			<td/>
 			<td/>
@@ -255,7 +255,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Globaal</td>
 			<td>n.v.t.</td>
 			<td/>
-			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.</td>
+			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we nog de bij onze statussen gewenste kleuren moeten definiëren.</td>
 			<td>Gereed</td>
 		</tr>
@@ -267,10 +267,8 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td/>
 			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
-				Indien deze variabele niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt. Volgens mij wordt er dan wel een waarschuwing of foutmelding op de Respec pagina gegenereerd wat natuurlijk ook niet de bedoeling is.</td>
-			<td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br/>
-				Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br/><br/>
-				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
+			Mag niet lokaal overruled worden.</td>
+			<td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -288,11 +286,11 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>licenses</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">link</a></td>
-			<td>Array van properties per licentiecode.</td>
+			<td>Array met per licentiecode de properties 'name', 'short', 'url' en 'image'.</td>
 			<td>Globaal</td>
 			<td>n.v.t.</td>
 			<td/>
-			<td>Definieert middels een array van configuratie opties de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de configuratie-optie 'license'.</td>
+			<td>Definieert middels een array van configuratie opties de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de configuratie-optie 'license'.<br/><br/>Mag waarschijnlijk lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke licenties bij ons van toepassing (zouden kunnen) zijn.<br/>Ik vermoed dat ook deze lokaal te overrulen is maar ik denk dat we dat niet moeten willen.</td>
 			<td>Gereed</td>
 		</tr>
