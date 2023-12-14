@@ -3,18 +3,17 @@ let respecConfig = {
 //  useLabel: true,
 //  license: "eupl",
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "WV",
+  specStatus: "DEF",
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
-  specType: "IM",
-  //pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2023-06-21",
-  publishVersion: "0.0.3",
+  specType: "HR",
+  shortName: "Respec-template",
+  publishDate: "2023-12-14",
+  publishVersion: "1.0.0",
   
-  previousVersion: "0.0.2",
+  previousVersion: "0.0.1",
   previousPublishDate: "2022-06-24",
   previousMaturity: "WV",
-  title: "titleText",
+  title: "How to generate Respec documentation",
   content: {"README": "informative", "ch01": "informative", "ch02": "informative", "mermaid": "informative"},
 //  editors:
 //    [
