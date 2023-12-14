@@ -92,7 +92,7 @@ Bij het genereren van de links zijn op dit moment de volgende configuration prop
 * prevVersion<br/>
   Wordt opgebouwd a.d.h.v. een aantal andere configuratie properties uit zowel de organisation_config als de document_config en enkele statische waardes. Deze is gedefinieerd in de organisation_config aangezien deze altijd gelijk blijft.
 * shortName<br/>
-  De project mnemonic, een afkorting van het project. Zo wordt het project 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. Deze is gedefinieerd in de document_config aangezien deze natuurlijk afhankelijk is van het te genereren Respec document.
+  De project-mnemonic, een afkorting van het project. Zo wordt het project 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. Deze is gedefinieerd in de document_config aangezien deze natuurlijk afhankelijk is van het te genereren Respec document.
 * publishVersion<br/>
   De versie van het te publiceren Respec document. Komt overeen met de Tagged Value 'Version' in het Enterprise Architect bestand van het model en heeft een waarde dat voldoet aan het formaat `x.x.x`, bijv. `2.0.0`. Deze is gedefinieerd in de document_config aangezien deze natuurlijk afhankelijk is van het te genereren Respec document.
 * previousVersion<br/>
@@ -105,17 +105,19 @@ Het is de bedoeling dat het publiceren van de statische html en pdf geautomatise
 
 Het publiceren van alle Respec documenten gebeurd via de GitHub repository 'publicatie' waarin de volgende consistente structuur vereist is:
 
-cim<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[project mnemonic]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x.x.x]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project mnemonic]-[x.x.x].pdf<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project mnemonic]-[x.x.x].pdf
+| folder- of bestandsnaam | Opmerking |
+| --- | --- |
+| cim | Het publicatie domein |
+| &nbsp;&nbsp;&nbsp;&nbsp;[project-mnemonic] | De afkorting van het project. 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x.x.x] | Het versienummer van het Respec document. Deze folder kan zich herhalen met steeds een ander versienummer. Komt minimaal 1x voor met als naam het huidige versienummer. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustraties staan opgenomen |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html | Gegenereerde statische html (snapshot.html) welke overeenkomt met de versie, hernoemd. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project-mnemonic]-[x.x.x].pdf | Gegenereerd pdf bestand welke overeenkomt met de versie. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media | Folder waarin evt. illustraties staan opgenomen |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html | Gegenereerde statische html (snapshot.html), welke overeenkomt met de huidige versie, hernoemd. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project-mnemonic]-[x.x.x].pdf | Gegenereerd pdf bestand welke overeenkomt met de huidige versie. |
 
-In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huiidge versie. De inhoud van die folder wordt dan eveneens geplaatst in de folder [project mnemonic]. `project mnemonic` is de afkorting voor een project. 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. Hieronder zie je een voorbeeld van deze structuur:
+In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huiidge versie. De inhoud van die folder wordt dan eveneens geplaatst in de folder [project-mnemonic]. `project-mnemonic` is  Hieronder zie je een voorbeeld van deze structuur:
 
 ![image](https://github.com/melsk-r/VNG-R-Respec-Template/assets/20185784/0ad7caf7-7c5b-4e72-9bee-09f7e9a93656)
 
