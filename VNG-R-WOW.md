@@ -363,8 +363,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>?</td>
 			<td/>
 			<td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in de GitHub Pages interface van de 'publicatie' GitHub repository. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.<br/><br/>Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>Mag niet lokaal overruled worden.</td>
-			<td>Er moet bepaald worden welke waarde we hier als VNG-R hier willen hebben staan. Helemaal onderin de README.md doe ik een voorstel voor de publicatie GitHub repository wat daarmee verband houdt. N.m.m. moet dit een globale configuratie optie zijn en er moet dus ook beschreven worden hoe hier procesmatig mee omgegaan moet worden. Daarover moet nog wel een beslissing worden genomen en ook of een lokale variant toegestaan is.<br/><br/>
-				Er moet onderzocht wat precies het verschil is tussen de laatst gepubliceerde versie en de laatste werkversie.</td>
+			<td>Er moet bepaald worden welke waarde we hier als VNG-R hier willen hebben staan. Helemaal onderin de README.md doe ik een voorstel voor de publicatie GitHub repository wat daarmee verband houdt. N.m.m. moet dit een globale configuratie optie zijn en er moet dus ook beschreven worden hoe hier procesmatig mee omgegaan moet worden. Daarover moet nog wel een beslissing worden genomen en ook of een lokale variant toegestaan is.</td>
 			<td/>
 		</tr>
 		<tr>
@@ -376,7 +375,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Definieert de lokatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Moet onderzocht worden of we hiervoor een eigen variant kunnen creëren en zo ja of we dat ook willen.</td>
-			<td/>
+			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>noTOC</td>
