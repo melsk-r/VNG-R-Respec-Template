@@ -68,9 +68,28 @@ Na het renderen van de Respec html en pdf worden er via github actions 2 control
   - of er geen `<a>` elementen voorkomen met 'href' attributen die verwijzen naar `<section>` elementen die helemaal niet bestaan.
 
   Deze check moet eerst succesvol uitgevoerd zijn voordat wordt begonnen aan de volgende check. In de 'Action' die start met het woord 'Update' (zie het `Actions` tabblad) kun je in de actie 'Check/WCAG' de step 'Run pa11y snapshot.html' vinden. Daar kun je zien welke fouten geconstateerd zijn.
-* een link-check, deze check controleert of alle links die in het document staan ook bestaan.
+* een link-check, deze check controleert of alle links die in het document staan ook bestaan. Het gaat dan bijv. om de links die worden vermeldt in:
+  - Deze versie'
+  - 'Laatst gepubliceerde versie'
+  - 'Laatste werkversie'
+  - 'Vorige versie'
 
 ### Publiceren van documenten
 Het is de bedoeling dat het publiceren van de statische html en pdf geautomatiseerd gaat verlopen. Dat hebben we helaas nog niet op orde en om die reden doen we dit voorlopig handmatig.
 
-Het publiceren van alle Respec documenten gebeurd via de GitHub repository 'gitdocumentatie'
+Het publiceren van alle Respec documenten gebeurd via de GitHub repository 'publicatie' waarin de volgende consistente structuur vereist is:
+
+cim<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;[project mnemonic]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[x.x.x]<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project mnemonic]-[x.x.x].pdf<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.html<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cim-[project mnemonic]-[x.x.x].pdf
+
+In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huiidge versie. Di inhoud van die folder wordt dan eveneens geplaatst in de folder [project mnemonic]. `project mnemonic` is de afkorting voor een project. 'Open Raadsinformatie' wordt bijv. afgekort als 'ori'. Hieronder zie je een voorbeeld van deze structuur:
+
+![image](https://github.com/melsk-r/VNG-R-Respec-Template/assets/20185784/0ad7caf7-7c5b-4e72-9bee-09f7e9a93656)
+
