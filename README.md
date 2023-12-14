@@ -36,7 +36,7 @@ De document_config (config.js) bevat configuratie properties die alleen relevant
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
 
-In VNG-R-WOW.md staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
+In [het volgende hoofdstuk](VNG-R-WOW.md) staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
 ### Rendering, automatische controles en publicatie
 Het bestand '.github/workflows/build.yml' bevat een action script waarmee automatisch een drietal acties worden uitgevoerd nadat een bestand in de repository wordt gewijzigd, toegevoegd of verwijderd:
