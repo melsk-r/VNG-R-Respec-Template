@@ -78,7 +78,7 @@ Na het renderen van de Respec html en pdf worden er via github actions 2 control
 
 > **LET OP!**<br/>
 > Onderstaand tekst is slechts een voorstel evenals de structuur van de publicatie GitHub repository.
-> De definitieve url kan indien gewenst nog andere onderdelen bevatten zoals `publishDate`, `previousPublishDate`, `specStatus`, `previousMaturity` of andere onderdelen.
+> De definitieve url kan indien gewenst nog andere onderdelen bevatten zoals bijv. `publishDate`, `previousPublishDate`, `specStatus`, `previousMaturity`.
 
 Bij het genereren van de links zijn op dit moment de volgende configuration properties van belang:
 * nl_organisationPublishURL<br/>
