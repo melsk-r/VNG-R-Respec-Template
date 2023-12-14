@@ -10,7 +10,7 @@ let respecConfig = {
   publishDate: "2023-12-14",
   publishVersion: "1.0.0",
   
-  previousVersion: "0.0.1",
+  previousPublishVersion: "0.0.1",
   previousPublishDate: "2022-06-24",
   previousMaturity: "WV",
   title: "How to generate Respec documentation",
