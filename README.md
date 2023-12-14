@@ -76,7 +76,7 @@ Na het renderen van de Respec html en pdf worden er via github actions 2 control
  
   Deze links verwijzen naar specifieke locaties in de GitHub Pages interface van de 'publicatie' GitHub repository (zie de volgende subparagraaf voor meer uitleg). Om deze check goed te kunnen doorstaan moeten deze locaties dus al bestaan in die interface. Indien dat nog niet gedaan is moet daar de folder voor het nieuwe versienummer van de Respec documentatie al worden aangemaakt. Plaats in die folder dan ook een tijdelijk 'index.html' bestand. De inhoud van dat bestand is (nog) niet van belang.
 
-> **LET OP!**
+> **LET OP!**<br/>
 > Onderstaand tekst is slechts een voorstel evenals de structuur van de publicatie GitHub repository.
 > De definitieve url kan indien gewenst nog andere onderdelen bevatten zoals `publishDate`, `previousPublishDate`, `specStatus`, `previousMaturity` of andere onderdelen.
 
