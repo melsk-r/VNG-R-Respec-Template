@@ -668,7 +668,7 @@ Zo niet dan worden de in de 'content' configuratie property gedefinieerde sectie
 </section><section id="secties-met-id-attribuutwaarde-index"><h5 id="x2-2-3-6-secties-met-id-attribuutwaarde-index"><bdi class="secno">2.2.3.6 </bdi>Secties met 'id' attribuutwaarde 'index'</h5>
 <p><code>&lt;section id="index"&gt;&lt;/section&gt;</code> genereert een hoofdstuk met als titel 'Bijlage N Index' als er in minimaal 1 van de in het document opgenomen bestanden (zowel markdown als html) minimaal 1 'dfn' element is opgenomen. Vanuit de tekst kan naar dat element verwezen worden door een 'a' element op te nemen zonder attributen maar met als inhoud de naam van een 'dfn' element.</p>
 </section><section id="bijlage-n-referenties"><h5 id="x2-2-3-7-bijlage-n-referenties"><bdi class="secno">2.2.3.7 </bdi>Bijlage N Referenties</h5>
-<p>Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '[<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-ref" title="Reference &quot;[Ref]&quot; not found." id="respec-offender-reference-ref-not-found">Ref</a></cite>]' en die referentie in config.js of organisation-config.js is gedefinieerd.</p>
+<p>Wordt alleen opgenomen als er in een van de andere documenten (zowel markdown als html)een referentie is opgenomen in de vorm '[Ref]' en die referentie in config.js of organisation-config.js is gedefinieerd.</p>
 </section><section id="secties-met-een-id-attribuutwaarde-die-niet-overeenkomt-met-de-hierboven-geschetste-varianten"><h5 id="x2-2-3-8-secties-met-een-id-attribuutwaarde-die-niet-overeenkomt-met-de-hierboven-geschetste-varianten"><bdi class="secno">2.2.3.8 </bdi>Secties met een 'id' attribuutwaarde die niet overeenkomt met de hierboven geschetste varianten</h5>
 <p>Indien het 'id' niet overeenkomt met een van de bekende id's dan wordt de sectie genegeerd.</p>
 </section></section><section id="lokale-respec-configuratie-properties"><h4 id="x2-2-4-lokale-respec-configuratie-properties"><bdi class="secno">2.2.4 </bdi>Lokale Respec configuratie properties</h4>
@@ -1257,9 +1257,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 <section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
     <h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3>
-    <dl class="bibliography"><dt id="bib-ref">[Ref]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
-    </dd><dt id="bib-semver">[SemVer]</dt><dd>
+    <dl class="bibliography"><dt id="bib-semver">[SemVer]</dt><dd>
       <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
