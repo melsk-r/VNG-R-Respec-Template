@@ -59,6 +59,7 @@ alternateFormats: [
   },
 ]
 ```
+De waarde van de property `uri` moet natuurlijk naar wens worden aangepast.
 
 #### Checken
 Na het renderen van de Respec html en pdf worden er via github actions 2 controles uitgevoerd op de html:  
