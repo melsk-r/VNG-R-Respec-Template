@@ -174,13 +174,12 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 		<tr>
 			<td>alternateFormats</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">link</a></td>
-			<td>Array van properties per formaat.</td>
-			<td>Lokaal</td>
+			<td>Array met per formaat de properties 'label' en 'url'.</td>
+			<td>?</td>
 			<td/>
 			<td/>
-			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt. De verantwoordleijkheid voor de creatie van die alternatieve formaten is aan de beheerder van de betreffende Respec repository.<br/>Deze configuratie property zorgt er alleen voor dat een zin gewijd wordt aan het/de betreffende alternatieve formaat/formaten en dat de link er naartoe wordt geplaatst in de Respec documentatie.</td>
-			<td>Of zo'n formaat aangeboden wordt lijkt me een lokale configuratie. Niet in de laatste plaats omdat het afhankelijk is van handmatige acties van de beheerder van de betreffende Respec repository.<br/><br/>
-			Blijkbaar is het ook mogelijk met GitHub Actions PDF documenten te genereren. In dat geval is dit niet meer afhankelijk van handmatige acties en zou het opgenomen kunnen worden in de globale configuratie. Dit moet nog onderzocht worden.</td>
+			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
+			<td>Het is de vraag of het aanbieden van een pdf formaat de verantwoordelijkheid behoort te zijn van de beheerder van een Respec repository.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -190,7 +189,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de totstandkoming van de specificatie.<br/><br/>Editors hebben de voorkeur boven authors.</td>
+			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Editors hebben de voorkeur boven authors.</td>
 			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
 			<td>Gereed </td>
 		</tr>
@@ -212,7 +211,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de totstandkoming van de specificatie.<br/><br/>Editors hebben de voorkeur boven authors.</td>
+			<td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Editors hebben de voorkeur boven authors.</td>
 			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
 			<td>Gereed</td>
 		</tr>
@@ -234,7 +233,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>gebruikt voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
+			<td>Gebruikt voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
 				<ul>
 					<li>een url naar een GitHub repository</li>
 					<li>het deel van de url van een GitHub repository dat komt na 'https://github.com/'</li>
@@ -247,7 +246,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				</ul>
 				Wordt tevens gebruikt voor het genereren van een link naar de GitHub pages van de laatste werkversie. Op basis van de hier gedefinieerde link wordt de GitHib Pages link automatisch bepaald.</td>
 			<td>Het is de vraag of de url moet verwijzen naar de GitHub repository waarin de Respec documentatie van een Informatiemodel staat of juist naar de GitHub repository waarmee het Informatiemodel wordt beheerd. Deze twee hoeven nl. niet per definitie gelijk te zijn.</td>
-			<td/>
+			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>labelColor</td>
@@ -264,14 +263,14 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>latestVersion</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
-			<td>?</td>
+			<td>Globaal</td>
 			<td/>
 			<td/>
-			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde variabelen en '/' tekens.<br/><br/>
+			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
 				Indien deze variabele niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt. Volgens mij wordt er dan wel een waarschuwing of foutmelding op de Respec pagina gegenereerd wat natuurlijk ook niet de bedoeling is.</td>
 			<td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br/>
 				Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br/><br/>
-				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden.</td>
+				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
