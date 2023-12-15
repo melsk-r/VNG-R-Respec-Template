@@ -16,6 +16,7 @@ graph TD;
     H[Basisstructuur voor project aanwezig in publicatie repo?]-->I[Creëer basisstructuur in publicatie repo];
     H[Basisstructuur voor project aanwezig in publicatie repo?]-->J[Creëer in basisstructuur voor project in publicatie repo folder voor versienr];
     I[Creëer basisstructuur in publicatie repo]-->J[Creëer in basisstructuur voor project in publicatie repo folder voor versienr];
+    G[Pas document configuratie properties aan]-->K[Plaats gegenereerde snapshot.html - als index.html - en pdf in versienr. folder en in de project folder van publicatie repo];
 ```
 
 <figcaption>Mermaid voorbeeld</figcaption>
