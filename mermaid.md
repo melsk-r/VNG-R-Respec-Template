@@ -21,7 +21,7 @@ graph TD;
     I("Creëer<br/>basisstructuur in<br/>'publicatie' repo")-->J("Creëer in<br/>basisstructuur voor<br/>project in 'publicatie'<br/>repo folder voor<br/>versienr");
     G("Pas document<br/>configuratie<br/>properties aan")-->K("Plaats<br/>gegenereerde<br/>snapshot.html (als<br/>index.html) en pdf<br/>in versienr. folder<br/>en in de project<br/>folder van<br/>'publicatie' repo");
     J("Creëer in<br/>basisstructuur voor<br/>project in 'publicatie'<br/>repo folder voor<br/>versienr")-->K("Plaats<br/>gegenereerde<br/>snapshot.html (als<br/>index.html) en pdf<br/>in versienr. folder<br/>en in de project<br/>folder van<br/>'publicatie' repo");
-    K("Plaats<br/>gegenereerde<br/>snapshot.html (als<br/>index.html) en pdf<br/>in versienr. folder<br/>en in de project<br/>folder van<br/>'publicatie' repo")-->L("Gebruik link van<br/>gegenereerd Respec<br/>document in GitHub<br/>Pages");
+    K("Plaats<br/>gegenereerde<br/>snapshot.html (als<br/>index.html) en pdf<br/>in versienr. folder<br/>en in de project<br/>folder van<br/>'publicatie' repo")-->L("Gebruik link van<br/>Respec document<br/>in 'publicatie' repo<br/>in GitHub Pages");
 ```
 
 <figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
