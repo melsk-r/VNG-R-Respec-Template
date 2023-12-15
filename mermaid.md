@@ -7,35 +7,43 @@
 graph LR;
     A["Genereer
 Respec html
-in Imvertor"]-->B["Repo
+in Imvertor"]-->B{"Repo
 voor project
-aanwezig?"];
-    B["Repo
+aanwezig?"};
+    B{"Repo
 voor project
-aanwezig?"]-->C["Creëer en
+aanwezig?"}-->C["Creëer en
 configureer repo
 voor project"];
-    B["Repo
+    B{"Repo
 voor project
-aanwezig?"]-->D["Plaats Respec html in project"];
+aanwezig?"}-->D["Plaats
+Respec html in
+project"];
     C["Creëer en
 configureer repo
-voor project"]-->D["Plaats Respec html in project"];
+voor project"]-->D["Plaats
+Respec html in
+project"];
     D["Plaats
 Respec html in
-project"]-->E["Overige content voor Respec document aanwezig en up to date?"];
-    E["Overige content
+project"]-->E{"Overige content
 voor Respec
 document
 aanwezig en
-up to date?"]-->F["Creëer overige
+up to date?"};
+    E{"Overige content
+voor Respec
+document
+aanwezig en
+up to date?"}-->F["Creëer overige
 content en/of pas
 deze aan"];
-    E["Overige content
+    E{"Overige content
 voor Respec
 document
 aanwezig en
-up to date?"]-->G["Pas document
+up to date?"}-->G["Pas document
 configuratie
 properties aan"];
 F["Creëer overige
@@ -45,17 +53,17 @@ configuratie
 properties aan"];
     A["Genereer
 Respec html
-in Imvertor"]-->H["Basisstructuur voor
+in Imvertor"]-->H{"Basisstructuur voor
 project aanwezig in
-publicatie repo?"];
-    H["Basisstructuur voor
+publicatie repo?"};
+    H{"Basisstructuur voor
 project aanwezig in
-publicatie repo?"]-->I["Creëer
+publicatie repo?"}-->I["Creëer
 basisstructuur in
 publicatie repo"];
-    H["Basisstructuur voor
+    H{"Basisstructuur voor
 project aanwezig in
-publicatie repo?"]-->J["Creëer in
+publicatie repo?"}-->J["Creëer in
 basisstructuur voor
 project in publicatie
 repo folder voor
