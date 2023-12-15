@@ -112,5 +112,5 @@ document in GitHub
 Pages");
 ```
 
-<figcaption>Mermaid voorbeeld</figcaption>
+<figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
 </figure>
