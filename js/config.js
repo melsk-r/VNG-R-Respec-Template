@@ -18,7 +18,7 @@ let respecConfig = {
   previousPublishVersion: "0.0.1",
 
   title: "Generating Respec documentation",
-  content: {"ch01": "", "ch02": "", "mermaid": "informative"},
+  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
 //  editors:
 //    [
 //      {
