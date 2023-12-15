@@ -2,11 +2,11 @@
 
 Zie de '[Flowchart syntax](https://mermaid.js.org/syntax/flowchart.html)' voor een uitleg van de syntax.
 
-
 <figure>
-
+    
 ```mermaid
-graph LR;
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+graph TD;
     A("Genereer<br/>Respec html<br/>in Imvertor")-->B{"Repo<br/>voor project<br/>aanwezig?"};
     B{"Repo<br/>voor project<br/>aanwezig?"}--Nee-->C("Creëer en<br/>configureer repo<br/>voor project");
     B{"Repo<br/>voor project<br/>aanwezig?"}--Ja-->D("Plaats<br/>Respec html in<br/>project");
