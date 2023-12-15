@@ -13,6 +13,8 @@ graph TD;
     E[Overige content voor Respec document aanwezig en up to date?]-->F[Creëer overige content en/of pas deze aan];
     E[Overige content voor Respec document aanwezig en up to date?]-->G[Pas document configuratie properties aan];
     A[Genereer Respec html in Imvertor]-->H[Basisstructuur voor project aanwezig in publicatie repo?];
+    H[Basisstructuur voor project aanwezig in publicatie repo?]-->I[Creëer basisstructuur in publicatie repo];
+    H[Basisstructuur voor project aanwezig in publicatie repo?]-->J[Creëer in basisstructuur voor project in publicatie repo folder voor versienr];
 ```
 
 <figcaption>Mermaid voorbeeld</figcaption>
