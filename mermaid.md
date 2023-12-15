@@ -4,7 +4,7 @@
 <figure>
 
 ```mermaid
-graph TD;
+graph LR;
     A["Genereer
 Respec html
 in Imvertor"]-->B["Repo
