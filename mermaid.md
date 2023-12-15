@@ -1,4 +1,4 @@
-# Mermaid diagram
+# Het VNG-R Respec proces
 
 Zie de '[Flowchart syntax](https://mermaid.js.org/syntax/flowchart.html)' voor een uitleg van de syntax.
 
