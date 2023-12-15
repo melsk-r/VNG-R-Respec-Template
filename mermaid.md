@@ -5,29 +5,29 @@
 
 ```mermaid
 graph LR;
-    A["Genereer
+    A("Genereer
 Respec html
-in Imvertor"]-->B{"Repo
+in Imvertor")-->B{"Repo
 voor project
 aanwezig?"};
     B{"Repo
 voor project
-aanwezig?"}-->C["Creëer en
+aanwezig?"}--Nee-->C("Creëer en
 configureer repo
-voor project"];
+voor project");
     B{"Repo
 voor project
-aanwezig?"}-->D["Plaats
+aanwezig?"}--Ja-->D("Plaats
 Respec html in
-project"];
-    C["Creëer en
+project");
+    C("Creëer en
 configureer repo
-voor project"]-->D["Plaats
+voor project")-->D("Plaats
 Respec html in
-project"];
-    D["Plaats
+project");
+    D("Plaats
 Respec html in
-project"]-->E{"Overige content
+project")-->E{"Overige content
 voor Respec
 document
 aanwezig en
@@ -36,78 +36,78 @@ up to date?"};
 voor Respec
 document
 aanwezig en
-up to date?"}-->F["Creëer overige
+up to date?"}--Nee-->F("Creëer overige
 content en/of pas
-deze aan"];
+deze aan");
     E{"Overige content
 voor Respec
 document
 aanwezig en
-up to date?"}-->G["Pas document
+up to date?"}--Ja-->G("Pas document
 configuratie
-properties aan"];
-F["Creëer overige
+properties aan");
+F("Creëer overige
 content en/of pas
-deze aan"]-->G["Pas document
+deze aan")-->G("Pas document
 configuratie
-properties aan"];
-    A["Genereer
+properties aan");
+    A("Genereer
 Respec html
-in Imvertor"]-->H{"Basisstructuur voor
+in Imvertor")-->H{"Basisstructuur voor
 project aanwezig in
 publicatie repo?"};
     H{"Basisstructuur voor
 project aanwezig in
-publicatie repo?"}-->I["Creëer
+publicatie repo?"}--Nee-->I("Creëer
 basisstructuur in
-publicatie repo"];
+publicatie repo");
     H{"Basisstructuur voor
 project aanwezig in
-publicatie repo?"}-->J["Creëer in
+publicatie repo?"}--Ja-->J("Creëer in
 basisstructuur voor
 project in publicatie
 repo folder voor
-versienr"];
-    I["Creëer
+versienr");
+    I("Creëer
 basisstructuur in
-publicatie repo"]-->J["Creëer in
+publicatie repo")-->J("Creëer in
 basisstructuur voor
 project in publicatie
 repo folder voor
-versienr"];
-    G["Pas document
+versienr");
+    G("Pas document
 configuratie
-properties aan"]-->K["Plaats
+properties aan")-->K("Plaats
 gegenereerde
 snapshot.html (als
 index.html) en pdf
 in versienr. folder
 en in de project
 folder van
-publicatie repo"];
-    J["Creëer in
+publicatie repo");
+    J("Creëer in
 basisstructuur voor
 project in publicatie
 repo folder voor
-versienr"]-->K["Plaats
+versienr")-->K("Plaats
 gegenereerde
 snapshot.html (als
 index.html) en pdf
 in versienr. folder
 en in de project
 folder van
-publicatie repo"];
-    K["Plaats
+publicatie repo");
+    K("Plaats
 gegenereerde
 snapshot.html (als
 index.html) en pdf
 in versienr. folder
 en in de project
 folder van
-publicatie repo"]-->L["Gebruik link van
+publicatie repo")-->L("Gebruik link van
 gegenereerd Respec
 document in GitHub
-Pages"];
+Pages");
 ```
 
 <figcaption>Mermaid voorbeeld</figcaption>
