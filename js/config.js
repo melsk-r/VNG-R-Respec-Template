@@ -5,10 +5,12 @@ let respecConfig = {
   shortName: "Respec-template",
 
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
-  specType: "HR",
+//  specType: "HR",
+  specType: "IM",
  
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "WV",
+//  specStatus: "WV",
+  specStatus: "DEF",
   publishDate: "2023-12-14",
   publishVersion: "0.1.0",
   
