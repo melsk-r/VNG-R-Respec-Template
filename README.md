@@ -70,7 +70,7 @@ Na het renderen van de Respec html en pdf worden er via github actions 2 control
 
   Deze check moet eerst succesvol uitgevoerd zijn voordat wordt begonnen aan de volgende check. In de 'Action' die start met het woord 'Update' (zie het `Actions` tabblad) kun je in de actie 'Check/WCAG' de step 'Run pa11y snapshot.html' vinden. Daar kun je zien welke fouten geconstateerd zijn.
 * een link-check, deze check controleert of alle links die in het document staan ook bestaan. Het gaat dan bijv. om de links die worden vermeldt in:
-  - Deze versie'
+  - 'Deze versie'
   - 'Laatst gepubliceerde versie'
   - 'Laatste werkversie'
   - 'Vorige versie'
