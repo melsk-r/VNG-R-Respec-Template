@@ -270,7 +270,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Globaal</td>
 			<td/>
 			<td/>
-			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
+			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
 			<td>Gereed</td>
@@ -458,7 +458,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td/>
 			<td>Url van de voorgaande versie.<br/>
-				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
+				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.</td>
 			<td>Deze property wordt op dit moment Globaal gedefinieerd en dus altijd verstrekt. Niet verstrekken is dus niet mogelijk. Er moet onderzocht worden of deze lokaal met een lege waarde overruled kan worden.
 				Als dat kan dan heeft het de voorkeur dat dit i.d.d. een globale property wordt.<br/><br/>
@@ -589,7 +589,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td/>
 			<td>Url van de huidige versie.<br/>
-				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens.<br/><br/>
+				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Het is verplicht deze property van een waarde te voorzien en deze mag niet Lokaal overruled worden.</td>
 			<td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br/>
 				Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br/><br/>
