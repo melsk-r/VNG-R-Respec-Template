@@ -17,7 +17,7 @@ let respecConfig = {
   // Zie 'localizationStrings/nl' voor de lijst met toegestane maturities
   previousMaturity: "WV",
   previousPublishDate: "2022-06-24",
-  previousPublishVersion: "0.0.3",
+  previousPublishVersion: "0.0.4",
 
   title: "Generating Respec documentation",
   content: {"mermaid": "", "ch01": "informative", "ch02": ""},
