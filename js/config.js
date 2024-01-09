@@ -18,7 +18,7 @@ let respecConfig = {
   previousMaturity: "WV",
   previousPublishDate: "2022-06-24",
   previousPublishVersion: "0.0.1",
-//
+
   title: "Generating Respec documentation",
   content: {"mermaid": "", "ch01": "informative", "ch02": ""},
 //  editors:
