@@ -2,7 +2,7 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "Respec-template2",
+  shortName: "Respec-template",
 
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
 //  specType: "HR",
