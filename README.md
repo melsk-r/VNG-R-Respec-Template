@@ -1,6 +1,5 @@
 ## ReSpec template instructies
 
-Test
 ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
 
 Organisatie administrators dienen de knop [_Use this template_](https://github.com/melsk-r/VNG-R-Respec-Template/generate) te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.
